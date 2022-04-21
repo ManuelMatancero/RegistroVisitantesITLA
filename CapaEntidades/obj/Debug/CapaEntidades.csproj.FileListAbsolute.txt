@@ -1,0 +1,6 @@
+C:\Users\matan\source\repos\PFINALPROGRAMACIONII\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\matan\source\repos\PFINALPROGRAMACIONII\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\matan\source\repos\PFINALPROGRAMACIONII\CapaEntidades\obj\Debug\CapaEntidades.csproj.AssemblyReference.cache
+C:\Users\matan\source\repos\PFINALPROGRAMACIONII\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\matan\source\repos\PFINALPROGRAMACIONII\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\matan\source\repos\PFINALPROGRAMACIONII\CapaEntidades\obj\Debug\CapaEntidades.pdb
