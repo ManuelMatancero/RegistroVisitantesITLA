@@ -26,7 +26,7 @@ namespace CapaDatos
             conexion.Close();
 
         }
-
+        //Actualizar aula
         public void updateAula(E_Aula e_Aula, String newId)
         {
             conexion.Open();
@@ -62,7 +62,7 @@ namespace CapaDatos
             return listar;
         }
 
-        //Listar aula por id
+        //Listar aula por edificio
         public List<E_Aula> listarPorEdificio(int buscar)
         {
             conexion.Open();

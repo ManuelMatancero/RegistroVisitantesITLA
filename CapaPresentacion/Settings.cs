@@ -18,6 +18,7 @@ namespace CapaPresentacion
 
         public Settings()
         {
+            //Al cargarse se muestra el from usuarioSt
             InitializeComponent();
             usuarioSt.MdiParent = this;
             usuarioSt.Show();
@@ -32,7 +33,7 @@ namespace CapaPresentacion
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
+        //BtnUsuarios accion
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             edificioSt.Hide();
@@ -40,7 +41,7 @@ namespace CapaPresentacion
             usuarioSt.MdiParent = this;
             usuarioSt.Show();
         }
-
+        //BtnAulas Accion
         private void btnAulas_Click(object sender, EventArgs e)
         {
             edificioSt.Hide();
@@ -48,7 +49,7 @@ namespace CapaPresentacion
             aulaSt.MdiParent = this;
             aulaSt.Show();
         }
-
+        //BtnEdificio Accion
         private void btnEdificio_Click(object sender, EventArgs e)
         {
             usuarioSt.Hide();
@@ -57,5 +58,7 @@ namespace CapaPresentacion
             edificioSt.Show();
 
         }
+
+       
     }
 }

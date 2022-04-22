@@ -63,10 +63,11 @@ namespace CapaPresentacion
         }
         //Acciones al cargar el formulario
         private void UsuarioSettings_Load(object sender, EventArgs e)
-        {
+        {   
             rbNombre.Checked = true;
             mostrarUsuarios("");
             bloquearCampos();
+            dataGridView1.Columns["IdUsuario"].Visible = false;
         }
         //Acciones para btnNuevo
         private void btnRegistrar_Click(object sender, EventArgs e)

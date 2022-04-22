@@ -87,7 +87,7 @@ namespace CapaDatos
             conexion.Close();
             return listar;
         }
-
+        //Listar usuarios por codigo
         public List<E_Usuarios> listarUsPorcodigo(String buscar)
         {
             conexion.Open();

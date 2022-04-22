@@ -31,7 +31,7 @@ namespace CapaDatos
             cmd.ExecuteNonQuery();
             conexion.Close();
         }
-
+        //Listar visitantes por nombre
         public List<E_Visitantes> listarVisitasPorNomb(string buscar)
         {
             SqlDataReader reader;
@@ -59,7 +59,7 @@ namespace CapaDatos
             conexion.Close();
             return listar;
         }
-
+        //Listar visitantes por edificio
         public List<E_Visitantes> listarVisitasPorEdif(int buscar)
         {
             SqlDataReader reader;

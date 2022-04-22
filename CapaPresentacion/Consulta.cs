@@ -34,7 +34,7 @@ namespace CapaPresentacion
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
+        //Al cargarse el formulario Consulta
         private void Consulta_Load(object sender, EventArgs e)
         {
             buscarPorNombre("");
@@ -54,41 +54,41 @@ namespace CapaPresentacion
             //Checkar radioButton nombre
             radioButton1.Checked = true;
         }
-
+        //Buscar por nombre
         private void buscarPorNombre(string buscar)
         {
             dataGridView1.DataSource = n_Visitante.listarVisitasPorNombN(buscar);
         }
-
+        //Buscar por edificio
         private void buscarPorEdificio(int buscar)
         {
             dataGridView1.DataSource = n_Visitante.listarVisitasPorEdifN(buscar);
         }
-
+        //Al cambiar el valor en txtNombre
         private void txtNombre_OnValueChanged(object sender, EventArgs e)
         {
             buscarPorNombre(txtNombre.Text);
         }
-
+        //radiobutton1
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             txtNombre.Enabled = true;
             comboBox1.Enabled = false;
             buscarPorNombre("");
         }
-
+        //radiobutton2
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             txtNombre.Enabled = false;
             comboBox1.Enabled = true;
             buscarPorNombre("");
         }
-
+        //Al cambiar el elemento de combo box
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             buscarPorEdificio(comboBox1.SelectedIndex + 1);
         }
-
+        //Acciones para el btnPDF que imprime la lista
         private void btnPdf_Click(object sender, EventArgs e)
         {
             if (dataGridView1.Rows.Count > 0)

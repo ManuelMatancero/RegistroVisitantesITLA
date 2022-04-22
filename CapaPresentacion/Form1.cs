@@ -30,7 +30,7 @@ namespace CapaPresentacion
         {
             Application.Exit();
         }
-
+        //Acciones para el btnAcceder
         private void btnAcceder_Click(object sender, EventArgs e)
         {
             if (txtUsuario.Text.Equals(""))
@@ -76,6 +76,12 @@ namespace CapaPresentacion
         private void txtUsuario_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Focus();
+            
         }
     }
 }

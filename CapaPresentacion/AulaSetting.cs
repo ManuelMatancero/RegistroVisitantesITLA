@@ -14,6 +14,7 @@ namespace CapaPresentacion
 {
     public partial class AulaSetting : Form
     {
+        //Variables y objetos
         N_Edificio n_Edificio = new N_Edificio();
         N_Aula n_Aula = new N_Aula();
         bool boolnueva = false;

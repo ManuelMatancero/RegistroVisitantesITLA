@@ -46,14 +46,14 @@ namespace CapaPresentacion
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "yyyy/MM/dd hh:mm:ss tt";
         }
-
+        //Accion que se efectuara cuando se seleccione una opcion del comboBoxEdificio
         private void comboBoxEdificio_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxAula.DataSource = n_Aula.listarPorEdificioN(comboBoxEdificio.SelectedIndex + 1);
             comboBoxAula.ValueMember = "IdAula";
             comboBoxAula.DisplayMember = "IdAula";
         }
-
+        //Acciones para el btnRegistrar
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if (isEmpty())
@@ -73,7 +73,7 @@ namespace CapaPresentacion
           
 
         }
-
+        //Verifica que algunos campos no esten vacios
         private bool isEmpty()
         {
             string nombre = txtNombre.Text;
@@ -120,7 +120,7 @@ namespace CapaPresentacion
                 return true;
             }
         }
-
+        //Limpia los campos
         private void limpiarCampos()
         {
             txtNombre.Text="";

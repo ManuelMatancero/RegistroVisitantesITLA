@@ -24,7 +24,7 @@ namespace CapaDatos
             cmd.ExecuteNonQuery();
             conexion.Close();
         }
-
+        //Actualizar edificio
         public void updateEdificio(E_Edificio e_Edificio, int seleccion)
         {
             conexion.Open();
@@ -36,7 +36,7 @@ namespace CapaDatos
             cmd.ExecuteNonQuery();
             conexion.Close();
         }
-
+        //Listar edificio
         public List<E_Edificio> listarEdificios(int buscar)
         {
             conexion.Open();
@@ -60,7 +60,7 @@ namespace CapaDatos
             conexion.Close();
             return listar;
         }
-
+        //Listar edificios general
         public List<E_Edificio> listarEdificiosG()
         {
             conexion.Open();

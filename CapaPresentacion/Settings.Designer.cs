@@ -219,6 +219,7 @@ namespace CapaPresentacion
             this.IsMdiContainer = true;
             this.Name = "Settings";
             this.Text = "Settings";
+         
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
