@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 using CapaEntidades;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace CapaDatos
 {
     public class D_Aula
     {
+        static string conn_string = System.Configuration.ConfigurationManager.ConnectionStrings["connection_string"].ConnectionString;
 
-        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-CS3DG9F;Initial Catalog=PFINALP2;Integrated Security=True");
+        SqlConnection conexion = new SqlConnection(conn_string);
 
         //Metodo para insertar Aula
         public void insertAula(E_Aula e_Aula)

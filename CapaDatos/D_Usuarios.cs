@@ -11,8 +11,9 @@ namespace CapaDatos
 {
     public class D_Usuarios
     {
-        //objeto que me permite abrir la conexion a a sql///
-        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-CS3DG9F;Initial Catalog=PFINALP2;Integrated Security=True");
+        static string conn_string = System.Configuration.ConfigurationManager.ConnectionStrings["connection_string"].ConnectionString;
+
+        SqlConnection conexion = new SqlConnection(conn_string);
 
 
         //metodo para insertar usuario
