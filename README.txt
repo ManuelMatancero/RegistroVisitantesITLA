@@ -1,3 +1,0 @@
-Este proyecto consiste en un programa que sirve para registrar los visitantes que ingresan a los distintos esificios del ITLA, esta desarrollado a partir de una arquitectura multicapas, con el lenguaje C# .NET, base de datos SQL Server. Aqui encontraran los archivos del backup de la base de datos, el script y un video donde explico y evidencio el programa en funcionamiento. Link https://itlaedudo-my.sharepoint.com/:f:/g/personal/20210785_itla_edu_do/EoKawoSX0PhMuoqY7Ofcj40B6U5phg06iaT3IPAEpsDalw?e=HdcbZJ
-
-Para probar el proyecto debe agregar su nombre del servidor en AppConfig ConnectionString ya teniendo el backup de la base de datos en su servidor.
